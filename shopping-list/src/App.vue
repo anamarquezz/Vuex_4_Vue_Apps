@@ -4,30 +4,29 @@
       <div class="header">
         <h1>Shopping List</h1>
       </div>
-      <div class="content"></div>
+      <div class="content">
+          <ShoppingList></ShoppingList>
+      </div>
     </div>
   </div>
 </template>
+<script>
+import ShoppingList from './views/ShoppingList'
+export default {
+  components:{
+    ShoppingList
+  }
+}
+</script>
 
 <style>
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   color: #2c3e50;
 }
-
-#nav {
-  padding: 30px;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+.wrapper {
+    margin: 10px;
+  }
 </style>

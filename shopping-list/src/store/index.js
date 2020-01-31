@@ -5,7 +5,7 @@ Vue.use(Vuex);
 let uuid=0;
 export default new Vuex.Store({
   state: {
-    shoppingList:[] // Array of items with id, name, price, quantity
+    shoppingList:[{id:1,name:"apples", price:0.5, quantity:5}] // Array of items with id, name, price, quantity
   },
   mutations: {
     ADD_ITEM_TO_LIST(state,{name,price, quantity}){

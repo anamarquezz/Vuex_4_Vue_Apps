@@ -1,10 +1,16 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 
-
+import ShoppingList from "../views/ShoppingList.vue";
 Vue.use(VueRouter);
 
-const routes = [  
+const routes = [
+  {
+    path: "/",
+    name: "shoppingllist",
+    component: ShoppingList
+  },
+
 ];
 
 const router = new VueRouter({
