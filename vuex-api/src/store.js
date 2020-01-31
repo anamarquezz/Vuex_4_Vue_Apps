@@ -7,5 +7,13 @@ export default new Vuex.Store({
   strict: true,
   state: {
     count: 1
+  },
+  mutations:{
+    INCREMENT(state){
+      state.count++;
+    },
+    ADD_N(state,n){
+      state.count += n;
+    }
   }
 });
