@@ -5,7 +5,7 @@
     <button class="pure-button" @click="addToCount(1)">
       Increment
     </button>
-    <button class="pure-button" @click="updateTrivia">
+    <button class="pure-button" @click="triviaUpdate">
       Get trivia
     </button>
     <div>{{$store.state.trivia}}</div>
@@ -15,7 +15,10 @@
 import { mapActions} from "vuex"
 export default{
   methods:{
-    ...mapActions(["addToCount","updateTrivia"])
+    ...mapActions(["addToCount"]),
+    ...mapActions({
+      triviaUpdate:"updateTrivia"
+    })
   }
 };
 </script>
