@@ -2,7 +2,7 @@ import Vue from "vue";
 import Vuex from "vuex";
 
 Vue.use(Vuex);
-let uuid=0;
+let uuid = 0;
 export default new Vuex.Store({
   state: {
     shoppingList:[{id:1,name:"apples", price:0.5, quantity:5}] // Array of items with id, name, price, quantity
