@@ -6,15 +6,18 @@
       </div>
       <div class="content">
           <ShoppingList></ShoppingList>
+          <ItemsSummary></ItemsSummary> 
       </div>
     </div>
   </div>
 </template>
 <script>
-import ShoppingList from './views/ShoppingList'
+import ShoppingList from './views/ShoppingList.vue'
+import ItemsSummary from './components/ItemsSummary.vue'
 export default {
   components:{
-    ShoppingList
+    ShoppingList,
+    ItemsSummary
   }
 }
 </script>

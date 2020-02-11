@@ -16,7 +16,7 @@
                     <input type="number" v-model="newItem.quantity" id="quantity" />
                 </div>
                 <div class="pure-controls">
-                    <button type="button" class="pure-button pure-button-primary"
+                      <button type="button" class="pure-button pure-button-primary"
                         :disabled="!newItem.name || !newItem.price || !newItem.quantity" @click="submitForm">
                         Add Item
                     </button>
@@ -30,16 +30,19 @@
                 <th>Price</th>
                 <th>Quantity</th>
                 <th></th>
+                <th></th>
             </thead>
             <tbody>
                 <tr v-for="item in $store.state.shoppingList" :key="item.id">
                     <td>{{ item.name }}
-                        <button class="pure-button" @click="startEdit(item)">
-                            <i class="fa fa-pencil-alt"></i>
-                        </button>
                     </td>
                     <td>{{ item.price }}</td>
                     <td>{{ item.quantity }}</td>
+                    <td>{{ item.name }}                 
+                    <td>
+                        <button class="pure-button" @click="startEdit(item)">
+                            <i class="fa fa-pencil-alt"></i>
+                        </button> </td>
                     <td><button @click="$store.commit('REMOVE_ITEM_FROM_LIST',item) " class="pure-button"><i
                                 class="fas fa-trash-alt"></i></button></td>
                 </tr>
