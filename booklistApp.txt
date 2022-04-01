@@ -1,0 +1,6 @@
+- browse a list of books
+- Create booklists
+- Add books to your booklists
+- View books on your booklists
+- Login
+- Create Users.
